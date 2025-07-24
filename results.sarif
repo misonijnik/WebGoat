@@ -26,145 +26,6 @@
                                             "location": {
                                                 "logicalLocations": [
                                                     {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed(java.lang.String):0:(this.createUser())",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "<unresolved taint_source>"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 56
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 1,
-                                            "index": 1,
-                                            "kinds": [
-                                                "unknown"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed(java.lang.String):1:(%0 = this.injectableQuery(query))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "Calling \"injectableQuery\" with $USER_INPUT data coming from the 1st argument"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 57
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 2,
-                                            "index": 2,
-                                            "kinds": [
-                                                "unknown"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):0:(%0 = this.dataSource)",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "Entering \"injectableQuery\" with $USER_INPUT data at the 1st argument"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 60
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 3,
-                                            "index": 3,
-                                            "kinds": [
-                                                "taint"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):3:(%5 = statement.executeQuery(query))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 65
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "level": "note",
-                    "locations": [
-                        {
-                            "logicalLocations": [
-                                {
-                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):3:(%5 = statement.executeQuery(query))",
-                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
-                                }
-                            ],
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
-                                },
-                                "region": {
-                                    "startLine": 65
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
-                    },
-                    "ruleId": "java.spring.sql-injsection"
-                },
-                {
-                    "codeFlows": [
-                        {
-                            "threadFlows": [
-                                {
-                                    "locations": [
-                                        {
-                                            "executionOrder": 0,
-                                            "index": 0,
-                                            "kinds": [
-                                                "taint"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
                                                         "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson2#completed(java.lang.String):0:(%0 = this.injectableQuery(query))",
                                                         "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson2#completed"
                                                     }
@@ -248,7 +109,7 @@
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
@@ -285,122 +146,9 @@
                         }
                     ],
                     "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                     },
-                    "ruleId": "java.spring.sql-injsection"
-                },
-                {
-                    "codeFlows": [
-                        {
-                            "threadFlows": [
-                                {
-                                    "locations": [
-                                        {
-                                            "executionOrder": 0,
-                                            "index": 0,
-                                            "kinds": [
-                                                "taint"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):0:(attackResult = this.checkArguments(username, email, password))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "<unresolved taint_source>"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 49
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 1,
-                                            "index": 1,
-                                            "kinds": [
-                                                "unknown"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):51:(checkUserQuery = str)",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "Call chain propagates $USER_INPUT data from the 1st argument of \"concat\" and assigns it to \"checkUserQuery\""
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 54
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 2,
-                                            "index": 2,
-                                            "kinds": [
-                                                "taint"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):6:(resultSet = statement.executeQuery(checkUserQuery))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 57
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ],
-                    "level": "note",
-                    "locations": [
-                        {
-                            "logicalLocations": [
-                                {
-                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):6:(resultSet = statement.executeQuery(checkUserQuery))",
-                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
-                                }
-                            ],
-                            "physicalLocation": {
-                                "artifactLocation": {
-                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
-                                },
-                                "region": {
-                                    "startLine": 57
-                                }
-                            }
-                        }
-                    ],
-                    "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
-                    },
-                    "ruleId": "java.spring.sql-injsection"
+                    "ruleId": "java.spring.sql-injection"
                 },
                 {
                     "codeFlows": [
@@ -526,7 +274,7 @@
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
@@ -563,9 +311,9 @@
                         }
                     ],
                     "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                     },
-                    "ruleId": "java.spring.sql-injsection"
+                    "ruleId": "java.spring.sql-injection"
                 },
                 {
                     "codeFlows": [
@@ -582,8 +330,8 @@
                                             "location": {
                                                 "logicalLocations": [
                                                     {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed(java.lang.String, java.lang.String):0:(%0 = this.injectableQueryConfidentiality(name, auth_tan))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed"
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed(java.lang.String):0:(this.createUser())",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed"
                                                     }
                                                 ],
                                                 "message": {
@@ -591,10 +339,10 @@
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
                                                     },
                                                     "region": {
-                                                        "startLine": 44
+                                                        "startLine": 56
                                                     }
                                                 }
                                             }
@@ -608,19 +356,19 @@
                                             "location": {
                                                 "logicalLocations": [
                                                     {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed(java.lang.String, java.lang.String):0:(%0 = this.injectableQueryConfidentiality(name, auth_tan))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed"
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed(java.lang.String):1:(%0 = this.injectableQuery(query))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#completed"
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "Calling \"injectableQueryConfidentiality\" with $USER_INPUT data coming from the 2nd argument"
+                                                    "text": "Calling \"injectableQuery\" with $USER_INPUT data coming from the 1st argument"
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
                                                     },
                                                     "region": {
-                                                        "startLine": 44
+                                                        "startLine": 57
                                                     }
                                                 }
                                             }
@@ -634,19 +382,19 @@
                                             "location": {
                                                 "logicalLocations": [
                                                     {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):0:(output = new java.lang.StringBuilder)",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):0:(%0 = this.dataSource)",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "Entering \"injectableQueryConfidentiality\" with $USER_INPUT data at the 2nd argument"
+                                                    "text": "Entering \"injectableQuery\" with $USER_INPUT data at the 1st argument"
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
                                                     },
                                                     "region": {
-                                                        "startLine": 47
+                                                        "startLine": 60
                                                     }
                                                 }
                                             }
@@ -655,50 +403,24 @@
                                             "executionOrder": 3,
                                             "index": 3,
                                             "kinds": [
-                                                "unknown"
-                                            ],
-                                            "location": {
-                                                "logicalLocations": [
-                                                    {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):90:(query = str)",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
-                                                    }
-                                                ],
-                                                "message": {
-                                                    "text": "Call chain propagates $USER_INPUT data from the 1st argument of \"concat\" and assigns it to \"query\""
-                                                },
-                                                "physicalLocation": {
-                                                    "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
-                                                    },
-                                                    "region": {
-                                                        "startLine": 49
-                                                    }
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "executionOrder": 4,
-                                            "index": 4,
-                                            "kinds": [
                                                 "taint"
                                             ],
                                             "location": {
                                                 "logicalLocations": [
                                                     {
-                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):7:(results = statement.executeQuery(query))",
-                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):3:(%5 = statement.executeQuery(query))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
-                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
                                                     },
                                                     "region": {
-                                                        "startLine": 62
+                                                        "startLine": 65
                                                     }
                                                 }
                                             }
@@ -713,24 +435,137 @@
                         {
                             "logicalLocations": [
                                 {
-                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):7:(results = statement.executeQuery(query))",
-                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery(java.lang.String):3:(%5 = statement.executeQuery(query))",
+                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson5#injectableQuery"
                                 }
                             ],
                             "physicalLocation": {
                                 "artifactLocation": {
-                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson5.java"
                                 },
                                 "region": {
-                                    "startLine": 62
+                                    "startLine": 65
                                 }
                             }
                         }
                     ],
                     "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                     },
-                    "ruleId": "java.spring.sql-injsection"
+                    "ruleId": "java.spring.sql-injection"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "executionOrder": 0,
+                                            "index": 0,
+                                            "kinds": [
+                                                "taint"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):0:(attackResult = this.checkArguments(username, email, password))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "<unresolved taint_source>"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 49
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 1,
+                                            "index": 1,
+                                            "kinds": [
+                                                "unknown"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):51:(checkUserQuery = str)",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Call chain propagates $USER_INPUT data from the 1st argument of \"concat\" and assigns it to \"checkUserQuery\""
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 54
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 2,
+                                            "index": 2,
+                                            "kinds": [
+                                                "taint"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):6:(resultSet = statement.executeQuery(checkUserQuery))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 57
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "note",
+                    "locations": [
+                        {
+                            "logicalLocations": [
+                                {
+                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser(java.lang.String, java.lang.String, java.lang.String):6:(resultSet = statement.executeQuery(checkUserQuery))",
+                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.advanced.SqlInjectionChallenge#registerNewUser"
+                                }
+                            ],
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionChallenge.java"
+                                },
+                                "region": {
+                                    "startLine": 57
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
+                    },
+                    "ruleId": "java.spring.sql-injection"
                 },
                 {
                     "codeFlows": [
@@ -856,7 +691,7 @@
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
@@ -893,9 +728,174 @@
                         }
                     ],
                     "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                     },
-                    "ruleId": "java.spring.sql-injsection"
+                    "ruleId": "java.spring.sql-injection"
+                },
+                {
+                    "codeFlows": [
+                        {
+                            "threadFlows": [
+                                {
+                                    "locations": [
+                                        {
+                                            "executionOrder": 0,
+                                            "index": 0,
+                                            "kinds": [
+                                                "taint"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed(java.lang.String, java.lang.String):0:(%0 = this.injectableQueryConfidentiality(name, auth_tan))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "<unresolved taint_source>"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 44
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 1,
+                                            "index": 1,
+                                            "kinds": [
+                                                "unknown"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed(java.lang.String, java.lang.String):0:(%0 = this.injectableQueryConfidentiality(name, auth_tan))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#completed"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Calling \"injectableQueryConfidentiality\" with $USER_INPUT data coming from the 1st argument"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 44
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 2,
+                                            "index": 2,
+                                            "kinds": [
+                                                "unknown"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):0:(output = new java.lang.StringBuilder)",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Entering \"injectableQueryConfidentiality\" with $USER_INPUT data at the 1st argument"
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 47
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 3,
+                                            "index": 3,
+                                            "kinds": [
+                                                "unknown"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):90:(query = str)",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "Call chain propagates $USER_INPUT data from the 1st argument of \"concat\" and assigns it to \"query\""
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 49
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "executionOrder": 4,
+                                            "index": 4,
+                                            "kinds": [
+                                                "taint"
+                                            ],
+                                            "location": {
+                                                "logicalLocations": [
+                                                    {
+                                                        "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):7:(results = statement.executeQuery(query))",
+                                                        "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                                    }
+                                                ],
+                                                "message": {
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
+                                                },
+                                                "physicalLocation": {
+                                                    "artifactLocation": {
+                                                        "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                                    },
+                                                    "region": {
+                                                        "startLine": 62
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "level": "note",
+                    "locations": [
+                        {
+                            "logicalLocations": [
+                                {
+                                    "decoratedName": "(id:69)org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality(java.lang.String, java.lang.String):7:(results = statement.executeQuery(query))",
+                                    "fullyQualifiedName": "org.owasp.webgoat.lessons.sqlinjection.introduction.SqlInjectionLesson8#injectableQueryConfidentiality"
+                                }
+                            ],
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java"
+                                },
+                                "region": {
+                                    "startLine": 62
+                                }
+                            }
+                        }
+                    ],
+                    "message": {
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
+                    },
+                    "ruleId": "java.spring.sql-injection"
                 },
                 {
                     "codeFlows": [
@@ -1073,7 +1073,7 @@
                                                     }
                                                 ],
                                                 "message": {
-                                                    "text": "$USER_INPUT includes in $QUERY to execute"
+                                                    "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                                                 },
                                                 "physicalLocation": {
                                                     "artifactLocation": {
@@ -1110,9 +1110,9 @@
                         }
                     ],
                     "message": {
-                        "text": "$USER_INPUT includes in $QUERY to execute"
+                        "text": "$USER_INPUT is used in $QUERY as a result of concatenation, and then called in \"executeQuery\""
                     },
-                    "ruleId": "java.spring.sql-injsection"
+                    "ruleId": "java.spring.sql-injection"
                 }
             ]
         }
