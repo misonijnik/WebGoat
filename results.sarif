@@ -126,7 +126,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -291,7 +291,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -430,7 +430,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -543,7 +543,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -708,7 +708,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -873,7 +873,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
@@ -1090,7 +1090,7 @@
                             ]
                         }
                     ],
-                    "level": "note",
+                    "level": "error",
                     "locations": [
                         {
                             "logicalLocations": [
